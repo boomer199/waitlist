@@ -27,10 +27,13 @@ const Email = mongoose.model('Email', emailSchema);
 // API route to handle form submissions
 app.post('/api/waiting-list', async (req, res) => {
   const { email } = req.body;
+  console.log('Received email:', email);
   try {
-    await Email.create({ email });
+    const newEmail = await Email.create({ email });
+    console.log('Email added:', newEmail);
     res.status(201).json({ message: 'Email added to the waiting list!' });
   } catch (error) {
+    console.error('Error adding email:', error);
     res.status(400).json({ message: 'This email is already on the waiting list.' });
   }
 });
