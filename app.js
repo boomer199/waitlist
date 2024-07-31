@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -8,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static('public'));  // Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));  // Serve static files from the "public" directory
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, {
@@ -36,7 +37,7 @@ app.post('/api/waiting-list', async (req, res) => {
 
 // Serve index.html for the root path
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(port, () => {
