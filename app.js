@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static('public'));  // Serve static files from the "public" directory
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, {
@@ -32,6 +32,11 @@ app.post('/api/waiting-list', async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: 'This email is already on the waiting list.' });
   }
+});
+
+// Serve index.html for the root path
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, () => {
