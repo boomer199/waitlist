@@ -37,3 +37,5 @@ app.post('/api/waiting-list', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+module.exports = app; // Ensure app is exported for Vercel
