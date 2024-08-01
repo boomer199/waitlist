@@ -43,6 +43,8 @@ app.post('/api/waiting-list', async (req, res) => {
     }
   });
 
+
+
 // Serve index.html for the root path
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));

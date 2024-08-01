@@ -1,120 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-wf-domain="savantai.webflow.io" data-wf-page="621de7acbd85624b59ce9515"
+    data-wf-site="6035fc8b6b9f1b6d5fb314a0" data-wf-status="1">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Our Waiting List</title>
-  <style>
-    /* Reset and base styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f8f9fa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    /* Container */
-    .container {
-      max-width: 400px;
-      padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #2c3e50;
-      text-align: center;
-    }
-
-    /* Form styles */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    input[type="email"] {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #e0e0e0;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 0.75rem;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #2980b9;
-    }
-
-    #message {
-      margin-top: 1rem;
-      text-align: center;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <title>Savant AI - Transform Video Lectures into Personalized Learning Experiences</title>
+    <meta
+        content="Savant AI takes your video lectures and slides, summarizes key info, and creates a personalized learning plan for subject mastery."
+        name="description" />
+    <meta content="Savant AI - Transform Video Lectures into Personalized Learning Experiences" property="og:title" />
+    <meta
+        content="Savant AI takes your video lectures and slides, summarizes key info, and creates a personalized learning plan for subject mastery."
+        property="og:description" />
+    <meta content="Savant AI - Transform Video Lectures into Personalized Learning Experiences" property="twitter:title" />
+    <meta
+        content="Savant AI takes your video lectures and slides, summarizes key info, and creates a personalized learning plan for subject mastery."
+        property="twitter:description" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="https://uploads-ssl.webflow.com/6035fc8b6b9f1b6d5fb314a0/css/aircart.webflow.5ae843096.css"
+        rel="stylesheet" type="text/css" />
+    <!-- Additional head content... -->
 </head>
-<body>
-  <div class="container">
-    <h1>Join Our Waiting List</h1>
-    <form id="waiting-list-form">
-      <input type="email" id="email" placeholder="Enter your email" required>
-      <button type="submit">Join</button>
-    </form>
-    <p id="message"></p>
-  </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const form = document.getElementById('waiting-list-form');
-      if (form) {
+<body class="body-3">
+    <div class="wf-section">
+        <div class="container-22 w-container">
+            <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
+                data-easing2="ease" role="banner" class="navbar-4 w-nav">
+                <div class="container-23 w-container"><a href="#" class="brand-3 w-nav-brand"><img
+                            src="path_to_savant_ai_logo.svg"
+                            loading="lazy" width="112" alt="Savant AI logo" /></a>
+                    <div class="menu-button w-nav-button"><a href="#joinwaitlist" class="button-17 w-button">Get Early Access</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-21 wf-section">
+        <div class="container-24 w-container">
+            <div class="w-layout-grid grid-9">
+                <div id="w-node-_86446a7b-4a26-be4d-ff64-4aef4b8a7f77-59ce9515">
+                    <h1 class="strong-header">Transform Your Learning with AI-Powered Insights</h1>
+                    <p class="paragraph-12">Savant AI takes your video lectures and slides, summarizes key information, and creates a personalized learning plan for subject mastery. Join the waitlist to revolutionize your learning experience.</p>
+                    <div>
+                        <div class="form-block-3 w-form">
+                            <form id="email-form" name="email-form" data-name="Email Form" method="POST" class="form-2">
+                                <input type="email" class="text-field-6 w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email address" id="email" required="" />
+                                <input type="submit" value="Join Waitlist" data-wait="Please wait..." class="submit-button-5 w-button" />
+                            </form>
+                            <div class="success-message-2 w-form-done">
+                                <div class="text-block-58">You've been added to the waitlist 🎉.</div>
+                            </div>
+                            <div class="w-form-fail">
+                                <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
         form.addEventListener('submit', async (e) => {
-          e.preventDefault();
-          const email = document.getElementById('email').value;
-          console.log('Sending email:', email);
-          try {
-            const response = await fetch('/api/waiting-list', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ email }),
-            });
-            const data = await response.json();
-            console.log('Response:', data);
-            document.getElementById('message').textContent = data.message;
-          } catch (error) {
-            console.error('Error:', error);
-            document.getElementById('message').textContent = 'An error occurred. Please try again.';
-          }
+            e.preventDefault();
+            const email = e.target.email.value;
+            try {
+                const response = await fetch('/api/waiting-list', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email }),
+                });
+                const data = await response.json();
+                if (response.ok) {
+                    e.target.reset();
+                    const successMessage = e.target.nextElementSibling;
+                    successMessage.style.display = 'block';
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 3000);
+                } else {
+                    throw new Error(data.message);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                const errorMessage = e.target.nextElementSibling.nextElementSibling;
+                errorMessage.style.display = 'block';
+                errorMessage.querySelector('div').textContent = error.message;
+                setTimeout(() => {
+                    errorMessage.style.display = 'none';
+                }, 3000);
+            }
         });
-      } else {
-        console.error('Form element not found');
-      }
     });
-  </script>
+});
+</script>
+
 </body>
+</html>
+</body>
+
 </html>
